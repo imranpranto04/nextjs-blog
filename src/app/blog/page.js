@@ -10,7 +10,7 @@ const page = () => {
             <ul>
                 {blogData.map((post) => (
                 <li key={post.id}>
-                    <Link href={`/post/${post.id}`}>
+                    <Link href="/blog/[id]" as={`/blog/${post.id}`}>
                         {post.title}
                     </Link>
                 </li>
